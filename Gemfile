@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
 ruby '2.3.0'
+
 gem 'rails', '5.0.0'            # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'puma', '3.6.0'             # Use Puma as the app server
 gem 'sass-rails', '5.0.6'       # Use SCSS for stylesheets
@@ -13,6 +13,8 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'slim-rails', '3.1.0'
 gem 'devise', '4.2.0'
+
+gem 'openssl', '2.0.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
