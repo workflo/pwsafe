@@ -10,6 +10,6 @@ class User < ApplicationRecord
   private
 
   def generate_and_encrypt_key_pair
-    KeyGenerationService::generate_and_encrypt_user_key_pair self, password
+    KeyService::generate_and_encrypt_user_key_pair self, password
   end
 end
