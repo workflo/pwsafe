@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170122183023) do
+ActiveRecord::Schema.define(version: 20170128201154) do
+
+  create_table "customer_tags", force: :cascade do |t|
+    t.string   "value"
+    t.integer  "document_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "document_keys", force: :cascade do |t|
+    t.integer  "document_id"
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.string   "encrypted_document_key"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "documents", force: :cascade do |t|
     t.string   "title"
