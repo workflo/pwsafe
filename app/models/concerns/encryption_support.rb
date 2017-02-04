@@ -4,7 +4,7 @@ module EncryptionSupport
   module ClassMethods
     def encrypts(name)
       define_method(name) do
-        "Das ist #{name}"
+        data[name] || ''
       end
 
       define_method("#{name}=") do |value|
