@@ -21,6 +21,7 @@ class Document < ApplicationRecord
   # private
 
   def encrypt_data()
+    # TODO: Do this and that!
   	json_string = data.to_json
   	Rails.logger.debug("encrypted_data(#{self}): #{json_string}")
 
